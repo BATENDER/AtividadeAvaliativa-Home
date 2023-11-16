@@ -1,0 +1,77 @@
+/* inicio header */
+
+nav {
+    background-color: var(--Onyx) !important;
+}
+
+#logo {
+    font-size: 20pt !important;
+    cursor: none;
+    font-family: 'Mystery Quest';
+    user-select: none;
+}
+
+.pg-atual {
+    color: var(--French-gray2) !important;
+}
+
+.pg-anim:hover {
+    text-decoration: overline !important;
+    cursor: pointer;
+}
+
+.cor-link {
+    color: var(--Slate-grey) !important;
+}
+
+.dropdown a {
+    background-color: transparent!important;
+    border: none transparent;
+}
+
+.dropdown a:hover {
+    background-color: black !important;
+}
+
+.dropdown-menu li a {
+    color: var(--French-gray2);
+}
+
+.dropdown-menu li a:hover {
+    background-color: var(--Outer-space) !important;
+}
+
+.divisao {
+    border: var(--French-gray2) 1px solid;
+}
+
+.entrar {
+    border: 1px solid var(--Slate-gray) !important;
+    background-color: transparent !important;
+}
+
+.entrar:hover {
+    background-color: var(--French-gray1) !important;
+}
+
+.inscrever {
+    color: whitesmoke !important;
+    background-color: var(--French-gray1) !important;
+}
+
+.inscrever:hover {
+    background-color: transparent !important;
+    border: 1px solid var(--French-gray1) !important;
+}
+
+/* fim header */
+/* inicio footer */
+
+footer {
+    background-color: var(--Onyx) !important;
+}
+
+.divider {
+    
+    border-color: whitesmoke;
+}
