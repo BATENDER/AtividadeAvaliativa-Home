@@ -17,15 +17,16 @@
         <div id="root">
             <header class="container-fluid m-0 p-0">
                 <nav class="navbar navbar-expand-lg">
-                    <div class="container-fluid row">
-                        <div class="col-lg-5 col-md-12">
+                    <div class="container-fluid">
+                        
                             <a id="logo" class="navbar-brand" href="#">MYST</a>
                             <button class="navbar-toggler d-lg-none d-md-flex justify-content-end" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="navbar-toggler-icon"></span>
                             </button>
-                        </div>
-                        <div class="collapse navbar-collapse col-lg-7 col-md-0 d-flex gap-4" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    
+                        <div class="collapse navbar-collapse d-flex gap-2" id="navbarSupportedContent">
+                            <ul class="p-2"></ul>
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0 d-flex justify-content-center">
                                 <li class="nav-item">
                                     <a class="nav-link pg-atual pg-anim" aria-current="page" href="#">Home</a>
                                 </li>
@@ -35,6 +36,8 @@
                                 <li class="nav-item">
                                     <a class="nav-link pg-anim" href="pages/sobreNos.html">Conheça Nosso Trabalho</a>
                                 </li>
+                            </ul>
+                            <ul class="navbar-nav me-md-auto mb-md-2 mb-lg-0 me-lg-0 d-flex justify-content-end gap-2">
                                 <li>
                                     <div class="dropdown">
                                         <a class="btn btn-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -47,48 +50,175 @@
                                         </ul>
                                     </div>
                                 </li>
+                                <li>
+                                    <div class="d-flex gap-3">
+                                        <button class="btn btn-dark entrar" type="button">Entrar</button>
+                                        <div class="divisao"></div>
+                                        <button class="btn inscrever" type="button">Inscreva-se</button>
+                                    </div>
+                                </li>
                             </ul>
-                            <div class="d-flex gap-3">
-                                <button class="btn btn-dark entrar" type="button">Entrar</button>
-                                <div class="divisao"></div>
-                                <button class="btn inscrever" type="button">Inscreva-se</button>
-                            </div>
                         </div>
                     </div>
                 </nav>
             </header>
 
-            <main></main>
+            <main>
+                <section id="intro" class="container-fluid p-0 py-1">
+                    <div id="imgIntro">
+                        <div class="d-flex justify-content-center align-items-center" style="height: 100%;">
+                            <div class="card text-center">
+                                <div class="card-body">
+                                    <h2 class="card-title">Boas-vindas</h2>
+                                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla debitis laudantium mollitia porro reiciendis quasi saepe facere, autem eveniet veniam voluptates asperiores officia itaque deserunt delectus quaerat consequatur consectetur ducimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate voluptatem, illum in qui totam ab quasi accusantium quaerat a suscipit dolore blanditiis doloribus ullam. Optio, blanditiis ducimus. Fugit, harum vero.</p>
+                                    <a href="#" class="btn btn-primary">Comece Agora</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
-            <footer class="container-fluid m-0 p-4">
-                <div class=" container text-center">
+                <section id="opcoes1" class="container-fluid p-0 m-0 py-1 text-center">
+                    <div class="container-fluid row d-flex justify-content-center gap-3 f-wrap py-5">
+                        <div class="col-3 card p-3 d-flex flex-column align-items-center justify-content-center" style="width: 18rem;">
+                            <div class="container d-flex align-items-center p-0 m-0" style="height: 50%;">
+                                <img src="imgs/icones/logo-branco-comunidade.svg" class="card-img-top" alt="..." style="height: 100%;">
+                            </div>
+                            <div class="container card-body d-flex flex-column justify-content-center p-0 m-0" style="height: 50%;">
+                                <h5 class="card-title">COMUNIDADE ENGAJADA E UNIDA</h5>
+                                <hr>
+                                <p class="card-text">Buscam resolver problemas junto da comunidade.</p>
+                            </div>
+                        </div>
+                        <div class="col-3 card p-3 d-flex flex-column align-items-center justify-content-center" style="width: 18rem;">
+                            <div class="container d-flex align-items-center p-0 m-0" style="height: 50%;">
+                                <img src="imgs/icones/logo-branco-carrinho.svg" class="card-img-top" alt="..." style="height: 100%;">
+                            </div>
+                            <div class="container card-body d-flex flex-column justify-content-center p-0 m-0" style="height: 50%;">
+                                <h5 class="card-title">LOJA VARIADA</h5>
+                                <hr>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="col-3 card p-3 d-flex flex-column align-items-center justify-content-center" style="width: 18rem;">
+                            <div class="container d-flex align-items-center p-0 m-0" style="height: 50%;">
+                                <img src="imgs/icones/logo-branco-comunidade.svg" class="card-img-top" alt="..." style="height: 100%;">
+                            </div>
+                            <div class="container card-body d-flex flex-column justify-content-center p-0 m-0" style="height: 50%;">
+                                <h5 class="card-title">ANONIMATO</h5>
+                                <hr>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        <div class="col-3 card p-3 d-flex flex-column align-items-center justify-content-center" style="width: 18rem;">
+                            <div class="container d-flex align-items-center p-0 m-0" style="height: 50%;">
+                                <img src="imgs/icones/logo-branco-comunidade.svg" class="card-img-top" alt="..." style="height: 100%;">
+                            </div>
+                            <div class="container card-body d-flex flex-column justify-content-center p-0 m-0" style="height: 50%;">
+                                <h5 class="card-title">DESAFIOS SEMANAIS</h5>
+                                <hr>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="opcoes2" class="container-fluid p-0 m-0 py-1 text-center"></section>
+            </main>
+
+            <footer class="container-fluid m-0 p-3">
+                <div class="container text-center">
                     <p class="h2" style="font-family: 'Mystery Quest'; color: whitesmoke; user-select: none;">MYST</p>
                     <p style="color: brown;">Todos os direitos reservados!</p>
                 </div>
+
                 <div class="container-fluid d-flex justify-content-center p-0 m-0">
-                    <hr class="divider" style="width: 65%;">
+                    <hr class="divider" style="width: 95%;">
                 </div>
-                <div class="container-fluid text-center row d-flex justify-content-center align-items-center p-0 m-0 py-3">
-                    <div class="col-2" style="height: 2rem;">
+
+                <div class="container-fluid text-center row d-flex justify-content-center align-items-center p-0 m-0 py-5">
+                    <div class="col-3" style="height: 2rem;">
                         <p class="pg-anim pg-atual d-flex align-items-center justify-content-center" style="height: 100%;">Home</p>
                     </div>
-                    <div class="col-2" style="height: 2rem;">
+                    <div class="col-3" style="height: 2rem;">
                         <p class="pg-anim pg-atual d-flex align-items-center justify-content-center" style="height: 100%;">Loja</p>
                     </div>
-                    <div class="col-2" style="height: 2rem;">
+                    <div class="col-3" style="height: 2rem;">
                         <p class="pg-anim pg-atual d-flex align-items-center justify-content-center" style="height: 100%;">Conheça Nosso Trabalho</p>
                     </div>
-                    <div class="col-2 d-flex align-items-center justify-content-center" style="height: 2rem;">
+                    <div class="col-3 d-flex align-items-center justify-content-center" style="height: 2rem;">
                         <p class="pg-anim pg-atual">Política de Privacidade</p>
                     </div>
                 </div>
-                <div class="container-fluid d-flex justify-content-center p-0 m-0">
-                    <hr class="divider" style="width: 65%;">
+                
+                <!-- <div class="container-fluid d-flex justify-content-center p-0 m-0">
+                    <hr class="divider" style="width: 95%;">
+                </div> -->
+
+                <div class="container-fluid p-0 py-4 m-0 text-center">
+                    <div class="container-fluid py-4 m-0">
+                        <p class="h3" style="color: var(--Slate-gray);">Formas de pagamento aceitas</p>
+                    </div>
+                    <div class="container-fluid row d-flex justify-content-center align-items-center m-0 p-0">
+                        <div class="col-1" style="height: 4rem;">
+                            <a href="" class="d-flex align-items-center" style="height: 100%;">
+                                <img src="imgs/icones/paypal.svg" alt="" class="w-100" style="height: 100%;">
+                            </a>
+                        </div>
+                        <div class="col-1" style="height: 4rem;">
+                            <a href="" class="d-flex align-items-center" style="height: 100%;">
+                                <img src="imgs/icones/pix.svg" alt="" class="w-100" style="height: 100%;">
+                            </a>
+                        </div>
+                        <div class="col-1" style="height: 4rem;">
+                            <a href="" class="d-flex align-items-center" style="height: 100%;">
+                                <img src="imgs/icones/visa.svg" alt="" class="w-100" style="height: 100%;">
+                            </a>
+                        </div>
+                        <div class="col-1" style="height: 4rem;">
+                            <a href="" class="d-flex align-items-center" style="height: 100%;">
+                                <img src="imgs/icones/mastercard.svg" alt="" class="w-100" style="height: 100%;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="container-fluid d-flex justify-content-center p-0 m-0">
+                    <hr class="divider" style="width: 95%;">
+                </div> -->
+                
+                <div class="container-fluid p-0 pt-4 m-0 text-center">
+                    <div class="container-fluid py-4 m-0">
+                        <p class="h3" style="color: var(--Slate-gray);">Nossas redes sociais</p>
+                    </div>
+                    <div class="container-fluid gap-3 d-flex justify-content-center align-items-center p-0 m-0">
+                        <div class="" style="height: 3rem;">
+                            <a id="btn-tt" href="" class="d-flex align-items-center" style="height: 100%;">
+                                <img id="btn-img-tt" src="imgs/icones/logo-branco-twitter.svg" alt="" class="w-100" style="height: 100%;">
+                            </a>
+                        </div>
+                        <div class="" style="height: 3rem;">
+                            <a id="btn-yt" href="" class="d-flex align-items-center" style="height: 100%;">
+                                <img id="btn-img-yt" src="imgs/icones/logo-branco.svg" alt="" class="w-100" style="height: 100%;">
+                            </a>
+                        </div>
+                        <div class="" style="height: 3rem;">
+                            <a id="btn-face" href="" class="d-flex align-items-center" style="height: 100%;">
+                                <img id="btn-img-face" src="imgs/icones/logo-branco-facebook.svg" alt="" class="w-100" style="height: 100%;">
+                            </a>
+                        </div>
+                        <div class="" style="height: 3rem;">
+                            <a id="btn-insta" href="" class="d-flex align-items-center" style="height: 100%;">
+                                <img id="btn-img-insta" src="imgs/icones/logo-branco-insta.svg" alt="" class="w-100" style="height: 100%;">
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </footer>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
     </body>
 </html>
