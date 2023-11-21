@@ -44,3 +44,10 @@
     background-image: url(../imgs/home/img1.png);
     background-position: center;
 }
+
+#opcoes2 {
+    height: 35rem;
+    background-image: url(../imgs/home/img2.png);
+    background-position: 0;
+}
+

@@ -71,7 +71,14 @@ footer {
     background-color: var(--Onyx) !important;
 }
 
+footer a {
+    text-decoration: none;
+}
+
 .divider {
-    
     border-color: whitesmoke;
+}
+
+#pagamento a:hover {
+    border: 1px solid var(--French-gray2);
 }
