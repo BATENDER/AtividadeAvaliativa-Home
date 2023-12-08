@@ -67,7 +67,7 @@
                     <div class="w-50 d-flex justify-content-center align-items-center " style="--bs-breadcrumb-divider: '>'; height: 100%;" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                           <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
-                          <li class="breadcrumb-item" aria-current="page" style="color: var(--French-gray2);"><a href="loja.html">Loja</a></li>
+                          <li class="breadcrumb-item"><a href="loja.html">Loja</a></li>
                           <li class="breadcrumb-item active" aria-current="page" style="color: var(--French-gray2);">Carrinho</li>
                         </ol>
                     </div>
@@ -82,7 +82,7 @@
                     </div>
                 </section>
 
-                <section id="cartTable" class="container-fluid px-2 py-1 d-flex flex-wrap">
+                <section id="cartTable" class="container-fluid px-2 py-4 d-flex flex-wrap">
                     <table class="table table-dark mb-0">
                         <thead>
                           <tr>
@@ -97,7 +97,7 @@
                           <tr>
                             <th scope="row" style="width: 40%;">
                                 <div class="container-fluid p-0 m-0 d-flex">
-                                    <div class="container p-1 m-0 bg-danger" style="width: 40%; height: 15rem;"></div>
+                                    <div class="container p-1 m-0 bg-secondary" style="width: 40%; height: 15rem;"></div>
                                     <div class="container m-0 p-0 px-4 d-flex flex-column justify-content-center" style="width: 60%;">
                                         <p class="h5 fw-bold" style="color: var(--French-gray1);">Nome-Produto</p>
                                         <p class="fw-light" style="color: var(--Platinum);">Cor: <span style="color: var(--French-gray1);">Tons de cinza</span></p>
@@ -139,7 +139,7 @@
                           <tr>
                             <th scope="row" style="width: 40%;">
                                 <div class="container-fluid p-0 m-0 d-flex">
-                                    <div class="container p-1 m-0 bg-danger" style="width: 40%; height: 15rem;"></div>
+                                    <div class="container p-1 m-0 bg-secondary" style="width: 40%; height: 15rem;"></div>
                                     <div class="container m-0 p-0 px-4 d-flex flex-column justify-content-center" style="width: 60%;">
                                         <p class="h5 fw-bold" style="color: var(--French-gray1);">Nome-Produto</p>
                                         <p class="fw-light" style="color: var(--Platinum);">Cor: <span style="color: var(--French-gray1);">Tons de cinza</span></p>
@@ -181,7 +181,7 @@
                           <tr>
                             <th scope="row" style="width: 40%;">
                                 <div class="container-fluid p-0 m-0 d-flex">
-                                    <div class="container p-1 m-0 bg-danger" style="width: 40%; height: 15rem;"></div>
+                                    <div class="container p-1 m-0 bg-secondary" style="width: 40%; height: 15rem;"></div>
                                     <div class="container m-0 p-0 px-4 d-flex flex-column justify-content-center" style="width: 60%;">
                                         <p class="h5 fw-bold" style="color: var(--French-gray1);">Nome-Produto</p>
                                         <p class="fw-light" style="color: var(--Platinum);">Cor: <span style="color: var(--French-gray1);">Tons de cinza</span></p>
@@ -224,104 +224,181 @@
                       </table>
                 </section>
 
-                <section id="cartTotal" class="container-fluid m-0 px-2 py-1 d-flex flex-wrap" style="background-color: var(--Slate-gray)">
-                    <div id="frete" class="container m-0 py-3 px-4 w-50 gap-5 d-flex flex-column" style="height: 20rem;">
+                <section id="cartTotal" class="container-fluid m-0 px-2 py-4 d-flex flex-wrap" style="background-color: var(--Slate-gray)">
+                    <div id="frete" class="container m-0 px-2 w-50 gap-5 d-flex flex-column justify-content-between" style="height: 20rem;">
                         <div class="container m-0 p-0 d-flex">
-                            <input type="text" name="" id="frete" class="border-0 rounded-start" style="height: 40px; background-color: var(--Platinum);">
+                            <input type="number" name="" id="frete" class="border-0 rounded-start" style="height: 40px; background-color: var(--Platinum);">
                             <label for="frete" class="btn btn-dark m-0 rounded-end rounded-0" style="height: 40px;">Calcular frete</label>
                         </div>
-                        <table class="table">
-                            <thead>
-                              <tr>
-                                <th scope="col"></th>
-                                <th scope="col">Envio</th>
-                                <th scope="col">Frete</th>
-                                <th scope="col">Prazo</th>
-                              </tr>
-                            </thead>
-                            <tbody>
-                              <tr>
-                                <th scope="row">
-                                    <div id="pac" class="form-check w-100 d-flex align-items-center justify-content-center" style="">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                        </label>
-                                    </div>
-                                </th>
-                                <td>PAC</td>
-                                <td class="freteValor"><span class="freteValor">GRÁTIS</span>GRÁTIS</td>
-                                <td>13 dias</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">
-                                    <div id="loja" class="form-check w-100 d-flex align-items-center justify-content-center">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                        </label>
-                                    </div>
-                                </th>
-                                <td>Retirar num beco escuro</td>
-                                <td><span class="freteValor">GRÁTIS</span></td>
-                                <td>??? dias</td>
-                              </tr>
-                              <tr>
-                                <th scope="row">
-                                    <div id="sedex" class="form-check w-100 d-flex align-items-center justify-content-center">
-                                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                                        <label class="form-check-label" for="flexRadioDefault1">
-                                        </label>
-                                    </div>
-                                </th>
-                                <td>SEDEX</td>
-                                <td>R$15,00</td>
-                                <td>4 dias</td>
-                              </tr>
-                            </tbody>
-                          </table>
+                        <div class="container p-0 m-0">
+                            <table class="table w-75">
+                                <thead>
+                                  <tr>
+                                    <th scope="col"></th>
+                                    <th scope="col">Envio</th>
+                                    <th scope="col">Frete</th>
+                                    <th scope="col">Prazo</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">
+                                        <div id="pac" class="form-check w-100 d-flex align-items-center justify-content-center" style="">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <td>PAC</td>
+                                    <td class="freteValor"><span class="freteValor">GRÁTIS</span></td>
+                                    <td>13 dias</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">
+                                        <div id="loja" class="form-check w-100 d-flex align-items-center justify-content-center">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <td>Retirar num beco escuro</td>
+                                    <td><span class="freteValor">GRÁTIS*</span></td>
+                                    <td>??? dias</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">
+                                        <div id="sedex" class="form-check w-100 d-flex align-items-center justify-content-center">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                            </label>
+                                        </div>
+                                    </th>
+                                    <td>SEDEX</td>
+                                    <td>R$15,00</td>
+                                    <td>4 dias</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                            <p class="h6 px-3">*Por sua própria conta e risco</p>
+                        </div>
                     </div>
 
-                    <div id="total" class="container m-0 py-3 px-4 w-50 bg-info" style="height: 20rem;">
-                        <table class="table">
-                            <thead>
-                              <tr>
-                                <th scope="col">#</th>
-                                <th scope="col">First</th>
-                                <th scope="col">Last</th>
-                                <th scope="col">Handle</th>
-                              </tr>
-                            </thead>
+                    <div id="total" class="container m-0 py-3 px-5 w-50 d-flex justify-content-end align-items-end" style="height: 20rem;">
+                        <table class="table w-50 m-0 p-0">
                             <tbody>
                               <tr>
-                                <th scope="row">1</th>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
+                                <th scope="row" class="h3 text-end">Subtotal</th>
+                                <td class="h4 text-end" style="color: var(--French-gray2);">R$ <span id="subtotal">0,00</span></td>
                               </tr>
                               <tr>
-                                <th scope="row">2</th>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
+                                <th scope="row" class="h3 text-end">Frete</th>
+                                <td class="h4 text-end" style="color: var(--French-gray2);">R$ <span id="frete">0,00</span></td>
                               </tr>
                               <tr>
-                                <th scope="row">3</th>
-                                <td colspan="2">Larry the Bird</td>
-                                <td>@twitter</td>
+                                <th scope="row" class="h2 text-end">TOTAL</th>
+                                <td class="h3 text-end" style="color: var(--French-gray2);">R$ <span id="subtotal">0,00</span></td>
                               </tr>
                             </tbody>
                           </table>
                     </div>
                 </section>
 
-                <section id="cartTitle" class="container-fluid px-2 py-1 d-flex flex-wrap">
-                    
+                <section id="cartTitle" class="container-fluid p-4 d-flex justify-content-between flex-wrap">
+                    <a href="loja.html" class="btn btn-outline-danger d-flex align-items-center">Escolher mais produtos</a>
+                    <a href="pagamento.html" class="btn btn-outline-secondary d-flex align-items-center gap-1">
+                        <p class="h4">Finalizar compra</p>
+                        <img src="../imgs/icones/check2.svg" alt="">
+                    </a>
                 </section>
             </main>
+
+            <footer class="container-fluid m-0 p-5">
+                <div class="container text-center">
+                    <p class="h2" style="font-family: 'Mystery Quest'; color: whitesmoke; user-select: none;">MYST</p>
+                    <p style="color: brown;">Todos os direitos reservados!</p>
+                </div>
+
+                <div class="container-fluid d-flex justify-content-center p-0 m-0">
+                    <hr class="divider" style="width: 95%;">
+                </div>
+
+                <div class="container-fluid text-center row d-flex justify-content-center align-items-center p-0 m-0 py-5">
+                    <div class="col-3" style="height: 2rem;">
+                        <a href="../index.html" class="pg-anim pg-atual d-flex align-items-center justify-content-center" style="height: 100%;">Home</a>
+                    </div>
+                    <div class="col-3" style="height: 2rem;">
+                        <a href="#logo" class="pg-anim pg-atual d-flex align-items-center justify-content-center" style="height: 100%;">Loja</a>
+                    </div>
+                    <div class="col-3" style="height: 2rem;">
+                        <a href="sobreNos.html" class="pg-anim pg-atual d-flex align-items-center justify-content-center" style="height: 100%;">Conheça o nosso trabalho</a>
+                    </div>
+                    <div class="col-3 d-flex align-items-center justify-content-center" style="height: 2rem;">
+                        <a href="" class="pg-anim pg-atual d-flex align-items-center justify-content-center" style="height: 100%;">Política de privacidade</a>
+                    </div>
+                </div>
+
+                <div id="pagamento" class="container-fluid p-0 py-4 m-0 text-center">
+                    <div class="container-fluid py-4 m-0">
+                        <p class="h3" style="color: var(--Slate-gray);">Formas de pagamento aceitas</p>
+                    </div>
+                    <div class="container-fluid row d-flex justify-content-center align-items-center m-0 p-0">
+                        <div class="col-2" style="height: 4rem;">
+                            <a href="" class="d-flex align-items-center" style="height: 100%;">
+                                <img src="../imgs/icones/paypal.svg" alt="" class="w-100" style="height: 100%;">
+                            </a>
+                        </div>
+                        <div class="col-2" style="height: 4rem;">
+                            <a href="" class="d-flex align-items-center" style="height: 100%;">
+                                <img src="../imgs/icones/pix.svg" alt="" class="w-100" style="height: 100%;">
+                            </a>
+                        </div>
+                        <div class="col-2" style="height: 4rem;">
+                            <a href="" class="d-flex align-items-center" style="height: 100%;">
+                                <img src="../imgs/icones/visa.svg" alt="" class="w-100" style="height: 100%;">
+                            </a>
+                        </div>
+                        <div class="col-2" style="height: 4rem;">
+                            <a href="" class="d-flex align-items-center" style="height: 100%;">
+                                <img src="../imgs/icones/mastercard.svg" alt="" class="w-100" style="height: 100%;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="container-fluid p-0 pt-4 m-0 text-center">
+                    <div class="container-fluid py-4 m-0">
+                        <p class="h3" style="color: var(--Slate-gray);">Nossas redes sociais</p>
+                    </div>
+                    <div class="container-fluid gap-3 d-flex justify-content-center align-items-center p-0 m-0">
+                        <div class="" style="height: 3rem;">
+                            <a id="btn-tt" href="" class="d-flex align-items-center" style="height: 100%;">
+                                <img id="btn-img-tt" src="../imgs/icones/logo-branco-twitter.svg" alt="" class="w-100" style="height: 100%;">
+                            </a>
+                        </div>
+                        <div class="" style="height: 3rem;">
+                            <a id="btn-yt" href="" class="d-flex align-items-center" style="height: 100%;">
+                                <img id="btn-img-yt" src="../imgs/icones/logo-branco.svg" alt="" class="w-100" style="height: 100%;">
+                            </a>
+                        </div>
+                        <div class="" style="height: 3rem;">
+                            <a id="btn-face" href="" class="d-flex align-items-center" style="height: 100%;">
+                                <img id="btn-img-face" src="../imgs/icones/logo-branco-facebook.svg" alt="" class="w-100" style="height: 100%;">
+                            </a>
+                        </div>
+                        <div class="" style="height: 3rem;">
+                            <a id="btn-insta" href="" class="d-flex align-items-center" style="height: 100%;">
+                                <img id="btn-img-insta" src="../imgs/icones/logo-branco-insta.svg" alt="" class="w-100" style="height: 100%;">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
         <script src="../js/jquery-3.7.1.js"></script>
+        <script src="../js/index.js"></script>
         <script src="../js/carrinho.js"></script>
     </body>
 </html>
