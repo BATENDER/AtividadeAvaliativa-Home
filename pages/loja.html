@@ -72,10 +72,16 @@
                         </ol>
                     </div>
                     <div class="w-50 d-flex justify-content-center align-items-center" style="height: 100%;">
-                        <a href="carrinho.html" class="btn btn-outline-dark d-flex justify-content-center align-items-center gap-3 m-0 w-lg-25 w-md-50" style="height: 30%;">
-                            <img src="../imgs/icones/logo-branco-carrinho.svg" alt="" class="h-100">
-                            <p class="h6 d-flex m-0 align-items-center" style="height: 100%;">Carrinho</p>
-                        </a>
+                        
+                        <button type="button" class="btn btn-outline-dark position-relative">
+                            <a href="carrinho.html" class="link-dark link-offset-2 link-underline-opacity-0 d-flex justify-content-center align-items-center gap-3 m-0 w-lg-25 w-md-50" style="height: 30%;">
+                                <img src="../imgs/icones/logo-branco-carrinho.svg" alt="" class="h-100">
+                                <p class="h6 d-flex m-0 align-items-center" style="height: 100%;">Carrinho</p>
+                            </a>
+                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                <span id="qtdCarrinho">00</span>
+                            </span>
+                        </button>
                     </div>
                 </section>
 
@@ -451,7 +457,7 @@
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">Fechar</button>
-                            <button type="button" class="btn btn-success">Adicionar ao Carrinho</button>
+                            <button id="adicionarAoCarrinho" type="button" class="btn btn-success">Adicionar ao Carrinho</button>
                         </div>
                     </div>
                 </div>
