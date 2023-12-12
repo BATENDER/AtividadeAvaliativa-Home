@@ -85,12 +85,15 @@ var numero31 = 0;
 var numero12 = 0;
 var numero22 = 0;
 var numero32 = 0;
+var subtotal = 0;
 
 $('#adicionar11').on('click', function() {
     numero11 = ++numero11;
     valorProduto1 = 115.9 * numero11;
     valorProduto1 = valorProduto1.toFixed(2);
+    subtotal = valorProduto1 + valorProduto2 + valorProduto3;
 
+    $('#subtotalTotal1').text(subtotal.toString().replace('.', ','));
     subtotalProduto11.text(valorProduto1.toString().replace('.', ','));
     numeroProduto11.text(numero11);
 });
@@ -99,7 +102,9 @@ $('#remover11').on('click', function() {
     numero11 = --numero11;
     valorProduto1 = 115.9 * numero11;
     valorProduto1 = valorProduto1.toFixed(2);
+    subtotal = valorProduto1 + valorProduto2 + valorProduto3;
 
+    $('#subtotalTotal1').text(subtotal.toString().replace('.', ','));
     subtotalProduto11.text(valorProduto1.toString().replace('.', ','));
     numeroProduto11.text(numero11);
 
@@ -108,117 +113,8 @@ $('#remover11').on('click', function() {
     }
 });
 
-$('#adicionar21').on('click', function() {
-    numero21 = ++numero21;
-    valorProduto2 = 50.49 * numero21;
-    valorProduto2 = valorProduto2.toFixed(2);
-
-    subtotalProduto21.text(valorProduto2.toString().replace('.', ','));
-    numeroProduto21.text(numero21);
-});
-
-$('#remover21').on('click', function() {
-    numero21 = --numero21;
-    valorProduto2 = 50.49 * numero21;
-    valorProduto2 = valorProduto2.toFixed(2);
-
-    subtotalProduto21.text(valorProduto2.toString().replace('.', ','));
-    numeroProduto21.text(numero21);
-
-    if (numero21 <= 0) {
-        numero21 = ++numero21;
-    }
-});
-
-$('#adicionar31').on('click', function() {
-    numero31 = ++numero31;
-    valorProduto3 = 80 * numero31;
-    valorProduto3 = valorProduto3.toFixed(2);
-
-    subtotalProduto31.text(valorProduto3.toString().replace('.', ','));
-    numeroProduto31.text(numero31);
-});
-
-$('#remover31').on('click', function() {
-    numero31 = --numero31;
-    valorProduto3 = 80 * numero31;
-    valorProduto3 = valorProduto3.toFixed(2);
-
-    subtotalProduto31.text(valorProduto3.toString().replace('.', ','));
-    numeroProduto31.text(numero31);
-
-    if (numero31 <= 0) {
-        numero31 = ++numero31;
-    }
-});
-
-$('#adicionar12').on('click', function() {
-    numero12 = ++numero12;
-    valorProduto1 = 115.9 * numero12;
-    valorProduto1 = valorProduto1.toFixed(2);
-
-    subtotalProduto12.text(valorProduto1.toString().replace('.', ','));
-    numeroProduto12.text(numero12);
-});
-
-$('#remover12').on('click', function() {
-    numero12 = --numero12;
-    valorProduto1 = 115.9 * numero12;
-    valorProduto1 = valorProduto1.toFixed(2);
-
-    subtotalProduto12.text(valorProduto1.toString().replace('.', ','));
-    numeroProduto12.text(numero12);
-
-    if (numero12 <= 0) {
-        numero12 = ++numero12;
-    }
-});
-
-$('#adicionar22').on('click', function() {
-    numero22 = ++numero22;
-    valorProduto2 = 50.49 * numero22;
-    valorProduto2 = valorProduto2.toFixed(2);
-
-    subtotalProduto22.text(valorProduto2.toString().replace('.', ','));
-    numeroProduto22.text(numero22);
-});
-
-$('#remover22').on('click', function() {
-    numero22 = --numero22;
-    valorProduto2 = 50.49 * numero22;
-    valorProduto2 = valorProduto2.toFixed(2);
-
-    subtotalProduto22.text(valorProduto2.toString().replace('.', ','));
-    numeroProduto22.text(numero22);
-
-    if (numero22 <= 0) {
-        numero22 = ++numero22;
-    }
-});
-
-$('#adicionar32').on('click', function() {
-    numero32 = ++numero32;
-    valorProduto3 = 80 * numero32;
-    valorProduto3 = valorProduto3.toFixed(2);
-
-    subtotalProduto32.text(valorProduto3.toString().replace('.', ','));
-    numeroProduto32.text(numero32);
-});
-
-$('#remover32').on('click', function() {
-    numero32 = --numero32;
-    valorProduto3 = 80 * numero32;
-    valorProduto3 = valorProduto3.toFixed(2);
-
-    subtotalProduto32.text(valorProduto3.toString().replace('.', ','));
-    numeroProduto32.text(numero32);
-
-    if (numero32 <= 0) {
-        numero32 = ++numero32;
-    }
-});
-
 
 // CALCULANDO FRETE, SUBTOTAL E TOTAL
-var sedex1 = $('#sedex1');
-var sedex2 = $('#sedex2');
+var sedex1 = $('#sedex1').val();
+var sedex2 = $('#sedex2').val();
+
