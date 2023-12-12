@@ -11,6 +11,12 @@
         <link rel="stylesheet" href="../styles/polos.css">
         <link rel="stylesheet" href="../styles/carrinho-mobile.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+        <style>
+            .btn:hover{
+                border: none !important;
+            }
+        </style>
     </head>
     <body>
         <div id="root">
@@ -93,7 +99,7 @@
                           </tr>
                         </thead>
                         <tbody>
-                          <tr>
+                          <tr id="produto11">
                             <th scope="row" style="width: 40%;">
                                 <div class="container-fluid p-0 m-0 d-flex">
                                     <div class="container p-1 m-0 bg-secondary" style="width: 40%; height: 15rem;"></div>
@@ -108,11 +114,11 @@
                             </th>
                             <td style="width: 16%;">
                                 <div class="w-100 p-2 d-flex justify-content-center align-items-center gap-1" style="height: 15rem;">
-                                    <button type="button" id="adicionar1" class="btn">
+                                    <button type="button" id="remover11" class="btn">
                                         <img src="../imgs/icones/caret-down-fill.svg" alt="">
                                     </button>
                                     <span id="numeroProduto11">0</span>
-                                    <button type="button" id="remover1" class="btn">
+                                    <button type="button" id="adicionar11" class="btn">
                                         <img src="../imgs/icones/caret-up-fill.svg" alt="">
                                     </button>
                                 </div>
@@ -135,7 +141,7 @@
                                 </div>
                             </td>
                           </tr>
-                          <tr>
+                          <tr id="produto21">
                             <th scope="row" style="width: 40%;">
                                 <div class="container-fluid p-0 m-0 d-flex">
                                     <div class="container p-1 m-0 bg-secondary" style="width: 40%; height: 15rem;"></div>
@@ -150,11 +156,11 @@
                             </th>
                             <td style="width: 16%;">
                                 <div class="w-100 p-2 d-flex justify-content-center align-items-center gap-1" style="height: 15rem;">
-                                    <button type="button" id="adicionar2" class="btn">
+                                    <button type="button" id="remover21" class="btn">
                                         <img src="../imgs/icones/caret-down-fill.svg" alt="">
                                     </button>
                                     <span id="numeroProduto21">0</span>
-                                    <button type="button" id="remover2" class="btn">
+                                    <button type="button" id="adicionar21" class="btn">
                                         <img src="../imgs/icones/caret-up-fill.svg" alt="">
                                     </button>
                                 </div>
@@ -177,7 +183,7 @@
                                 </div>
                             </td>
                           </tr>
-                          <tr>
+                          <tr id="produto31">
                             <th scope="row" style="width: 40%;">
                                 <div class="container-fluid p-0 m-0 d-flex">
                                     <div class="container p-1 m-0 bg-secondary" style="width: 40%; height: 15rem;"></div>
@@ -192,11 +198,11 @@
                             </th>
                             <td style="width: 16%;">
                                 <div class="w-100 p-2 d-flex justify-content-center align-items-center gap-1" style="height: 15rem;">
-                                    <button type="button" id="adicionar3" class="btn">
+                                    <button type="button" id="remover31" class="btn">
                                         <img src="../imgs/icones/caret-down-fill.svg" alt="">
                                     </button>
                                     <span id="numeroProduto31">0</span>
-                                    <button type="button" id="remover3" class="btn">
+                                    <button type="button" id="adicionar31" class="btn">
                                         <img src="../imgs/icones/caret-up-fill.svg" alt="">
                                     </button>
                                 </div>
@@ -250,11 +256,11 @@
                                 <div class="container-fluid m-0 p-0 pt-2 d-flex gap-3">
                                     <div class="w-50 d-flex justify-content-center align-items-center h-100 gap-2">
                                         <div class="p-2 d-flex justify-content-center aligh-items-center gap-1 border border-dark rounded" style="height: 90%; width: 90%;">
-                                            <button type="button" id="adicionar1" class="btn d-flex aligh-items-center">
+                                            <button type="button" id="remover12" class="btn d-flex aligh-items-center">
                                                 <img src="../imgs/icones/caret-down-fill.svg" alt="">
                                             </button>
                                             <span id="numeroProduto12">0</span>
-                                            <button type="button" id="remover1" class="btn d-flex aligh-items-center">
+                                            <button type="button" id="adicionar12" class="btn d-flex aligh-items-center">
                                                 <img src="../imgs/icones/caret-up-fill.svg" alt="">
                                             </button>
                                         </div>
@@ -290,11 +296,11 @@
                                 <div class="container-fluid m-0 p-0 pt-2 d-flex gap-3">
                                     <div class="w-50 d-flex justify-content-center align-items-center h-100 gap-2">
                                         <div class="p-2 d-flex justify-content-center aligh-items-center gap-1 border border-dark rounded" style="height: 90%; width: 90%;">
-                                            <button type="button" id="adicionar2" class="btn d-flex aligh-items-center">
+                                            <button type="button" id="remover22" class="btn d-flex aligh-items-center">
                                                 <img src="../imgs/icones/caret-down-fill.svg" alt="">
                                             </button>
                                             <span id="numeroProduto22">0</span>
-                                            <button type="button" id="remover2" class="btn d-flex aligh-items-center">
+                                            <button type="button" id="adicionar22" class="btn d-flex aligh-items-center">
                                                 <img src="../imgs/icones/caret-up-fill.svg" alt="">
                                             </button>
                                         </div>
@@ -330,11 +336,11 @@
                                 <div class="container-fluid m-0 p-0 pt-2 d-flex gap-3">
                                     <div class="w-50 d-flex justify-content-center align-items-center h-100 gap-2">
                                         <div class="p-2 d-flex justify-content-center aligh-items-center gap-1 border border-dark rounded" style="height: 90%; width: 90%;">
-                                            <button type="button" id="adicionar3" class="btn d-flex aligh-items-center">
+                                            <button type="button" id="remover32" class="btn d-flex aligh-items-center">
                                                 <img src="../imgs/icones/caret-down-fill.svg" alt="">
                                             </button>
                                             <span id="numeroProduto32">0</span>
-                                            <button type="button" id="remover3" class="btn d-flex aligh-items-center">
+                                            <button type="button" id="adicionar32" class="btn d-flex aligh-items-center">
                                                 <img src="../imgs/icones/caret-up-fill.svg" alt="">
                                             </button>
                                         </div>
@@ -385,7 +391,7 @@
                                   </tr>
                                   <tr>
                                     <th scope="row">
-                                        <div id="sedex" class="form-check w-100 d-flex align-items-center justify-content-center">
+                                        <div id="sedex1" class="form-check w-100 d-flex align-items-center justify-content-center">
                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="freteValor">
                                         </div>
                                     </th>
@@ -460,7 +466,7 @@
                                   </tr>
                                   <tr>
                                     <th scope="row">
-                                        <div id="sedex" class="form-check w-100 d-flex align-items-center justify-content-center">
+                                        <div id="sedex2" class="form-check w-100 d-flex align-items-center justify-content-center">
                                             <input class="form-check-input" type="radio" name="flexRadioDefault" id="freteValor">
                                         </div>
                                     </th>
