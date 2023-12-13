@@ -12,88 +12,353 @@ btnCancelar.forEach((btn,i) =>{
 
 
 // AUMENTAR E DECREMENTAR QUANTIDADE DE PRODUTOS
-// var numeroProduto11 = $('#numeroProduto11');
-// var numeroProduto21 = $('#numeroProduto21');
-// var numeroProduto31 = $('#numeroProduto31');
-// var numeroProduto12 = $('#numeroProduto12');
-// var numeroProduto22 = $('#numeroProduto22');
-// var numeroProduto32 = $('#numeroProduto32');
-// var subtotalProduto11 = $('#subtotalProduto11');
-// var subtotalProduto21 = $('#subtotalProduto21');
-// var subtotalProduto31 = $('#subtotalProduto31');
-// var subtotalProduto12 = $('#subtotalProduto12');
-// var subtotalProduto22 = $('#subtotalProduto22');
-// var subtotalProduto32 = $('#subtotalProduto32');
-// var valorProduto1 = 0;
-// var valorProduto2 = 0;
-// var valorProduto3 = 0;
-// var numero11 = 0;
-// var numero21 = 0;
-// var numero31 = 0;
-// var numero12 = 0;
-// var numero22 = 0;
-// var numero32 = 0;
-var btnAdicionar1 = document.querySelectorAll('.adicionar1');
-var btnRemover1 = $('.remover1');
-var btnAdicionar2 = $('.adicionar2');
-var btnRemover2 = $('.remover2');
-var subtotalProduto1 = $('.subtotalProduto1');
-var subtotalProduto2 = $('.subtotalProduto2');
-var numeroProduto1 = $('.numeroProduto1');
-var numeroProduto2 = $('.numeroProduto2');
-var numero = 0;
-var precoProduto = [115.9, 50.49, 80];
-var valorProduto = [0, 0, 0]
-var subtotal = 0;
-var i = 0;
+var numeroProduto11 = $('#numeroProduto11');
+var numeroProduto21 = $('#numeroProduto21');
+var numeroProduto31 = $('#numeroProduto31');
+var numeroProduto12 = $('#numeroProduto12');
+var numeroProduto22 = $('#numeroProduto22');
+var numeroProduto32 = $('#numeroProduto32');
+var subtotalProduto11 = $('#subtotalProduto11');
+var subtotalProduto21 = $('#subtotalProduto21');
+var subtotalProduto31 = $('#subtotalProduto31');
+var subtotalProduto12 = $('#subtotalProduto12');
+var subtotalProduto22 = $('#subtotalProduto22');
+var subtotalProduto32 = $('#subtotalProduto32');
+var valorProduto1 = 0;
+var valorProduto2 = 0;
+var valorProduto3 = 0;
+var numero11 = 0;
+var numero21 = 0;
+var numero31 = 0;
+var numero12 = 0;
+var numero22 = 0;
+var numero32 = 0;
+var total1 = 0;
+var total2 = 0;
 
-btnAdicionar1.forEach((btn, i) => {
-    btn.addEventListener('click', function() {
-        numero = ++numero;
-        valorProduto[i] = precoProduto[i] * numero;
-        valorProduto[i] = valorProduto[i].toFixed(2);
-        subtotal = Number(valorProduto[0]) + Number(valorProduto[1]) + Number(valorProduto[2]);
+// BOTÕES DE ADICIONAR
+$('#adicionar11').on('click', function() {
+    numero11 = ++numero11;
+    valorProduto1 = 115.9 * numero11;
+    valorProduto1 = valorProduto1.toFixed(2);
+    subtotal = Number(valorProduto1) + Number(valorProduto2) + Number(valorProduto3);
+    subtotal = Number(subtotal).toFixed(2);
+
+    $('#subtotalTotal1').text(subtotal);
+    subtotalProduto11.text(valorProduto1);
+    numeroProduto11.text(numero11);
+
+    if (document.querySelector('#sedex1').checked) {
+        total = Number(subtotal) + 15;
+        total = total.toFixed(2);
+        $('#freteTotal1').text('15,00');
+        $('#total1').text(total);
+    } else {
+        total = Number(subtotal);
+        total = total.toFixed(2);
+        $('#freteTotal1').text('0,00');
+        $('#total1').text(total);
+    }
+});
+
+$('#adicionar21').on('click', function() {
+    numero21 = ++numero21;
+    valorProduto2 = 50.49 * numero21;
+    valorProduto2 = valorProduto2.toFixed(2);
+    subtotal = Number(valorProduto1) + Number(valorProduto2) + Number(valorProduto3);
+    subtotal = Number(subtotal).toFixed(2);
+
+    $('#subtotalTotal1').text(subtotal);
+    subtotalProduto21.text(valorProduto2);
+    numeroProduto21.text(numero21);
+
+    if (document.querySelector('#sedex1').checked) {
+        total = Number(subtotal) + 15;
+        total = total.toFixed(2);
+        $('#freteTotal1').text('15,00');
+        $('#total1').text(total);
+    } else {
+        total = Number(subtotal);
+        total = total.toFixed(2);
+        $('#freteTotal1').text('0,00');
+        $('#total1').text(total);
+    }
+});
+
+$('#adicionar31').on('click', function() {
+    numero31 = ++numero31;
+    valorProduto3 = 80 * numero31;
+    valorProduto3 = valorProduto3.toFixed(2);
+    subtotal = Number(valorProduto1) + Number(valorProduto2) + Number(valorProduto3);
+    subtotal = Number(subtotal).toFixed(2);
+
+    $('#subtotalTotal1').text(subtotal);
+    subtotalProduto31.text(valorProduto3);
+    numeroProduto31.text(numero31);
+
+    if (document.querySelector('#sedex1').checked) {
+        total = Number(subtotal) + 15;
+        total = total.toFixed(2);
+        $('#freteTotal1').text('15,00');
+        $('#total1').text(total);
+    } else {
+        total = Number(subtotal);
+        total = total.toFixed(2);
+        $('#freteTotal1').text('0,00');
+        $('#total1').text(total);
+    }
+});
+
+$('#adicionar12').on('click', function() {
+    numero12 = ++numero12;
+    valorProduto1 = 115.9 * numero12;
+    valorProduto1 = valorProduto1.toFixed(2);
+    subtotal = Number(valorProduto1) + Number(valorProduto2) + Number(valorProduto3);
+    subtotal = Number(subtotal).toFixed(2);
+
+    $('#subtotalTotal2').text(subtotal);
+    subtotalProduto12.text(valorProduto1);
+    numeroProduto12.text(numero12);
+
+    if (document.querySelector('#sedex2').checked) {
+        total = Number(subtotal) + 15;
+        total = total.toFixed(2);
+        $('#freteTotal2').text('15,00');
+        $('#total2').text(total);
+    } else {
+        total = Number(subtotal);
+        total = total.toFixed(2);
+        $('#freteTotal2').text('0,00');
+        $('#total2').text(total);
+    }
+});
+
+$('#adicionar22').on('click', function() {
+    numero22 = ++numero12;
+    valorProduto2 = 50.49 * numero22;
+    valorProduto2 = valorProduto2.toFixed(2);
+    subtotal = Number(valorProduto1) + Number(valorProduto2) + Number(valorProduto3);
+    subtotal = Number(subtotal).toFixed(2);
+
+    $('#subtotalTotal2').text(subtotal);
+    subtotalProduto22.text(valorProduto2);
+    numeroProduto22.text(numero22);
+
+    if (document.querySelector('#sedex2').checked) {
+        total = Number(subtotal) + 15;
+        total = total.toFixed(2);
+        $('#freteTotal2').text('15,00');
+        $('#total2').text(total);
+    } else {
+        total = Number(subtotal);
+        total = total.toFixed(2);
+        $('#freteTotal2').text('0,00');
+        $('#total2').text(total);
+    }
+});
+
+$('#adicionar32').on('click', function() {
+    numero32 = ++numero32;
+    valorProduto3 = 80 * numero32;
+    valorProduto3 = valorProduto3.toFixed(2);
+    subtotal = Number(valorProduto1) + Number(valorProduto2) + Number(valorProduto3);
+    subtotal = Number(subtotal).toFixed(2);
+
+    $('#subtotalTotal2').text(subtotal);
+    subtotalProduto32.text(valorProduto3);
+    numeroProduto32.text(numero32);
+
+    if (document.querySelector('#sedex2').checked) {
+        total = Number(subtotal) + 15;
+        total = total.toFixed(2);
+        $('#freteTotal2').text('15,00');
+        $('#total2').text(total);
+    } else {
+        total = Number(subtotal);
+        total = total.toFixed(2);
+        $('#freteTotal2').text('0,00');
+        $('#total2').text(total);
+    }
+});
+
+
+// BOTÕES DE REMOVER
+$('#remover11').on('click', function() {
+    if (numero11 <= 0) {
+        numero11 = 0;
+        numeroProduto11.text(numero11);
+
+    }else{
+        numero11 = --numero11;
+        valorProduto1 = 115.9 * Number(numero11);
+        valorProduto1 = valorProduto1.toFixed(2);
+        subtotal = Number(valorProduto1) + Number(valorProduto2) + Number(valorProduto3);
+        subtotal = Number(subtotal).toFixed(2);
     
         $('#subtotalTotal1').text(subtotal);
-        subtotalProduto11.text(valorProduto[i]);
-        numeroProduto1.text(numero);
-        // colocar a resposta para cada elemento no html! Ou seja, um id para cada post
-    });
-})
+        subtotalProduto11.text(valorProduto1);
+        numeroProduto11.text(numero11);
+        
+        if (document.querySelector('#sedex1').checked) {
+            total = Number(subtotal) + 15;
+            total = total.toFixed(2);
+            $('#freteTotal1').text('15,00');
+            $('#total1').text(total);
+        } else {
+            total = Number(subtotal);
+            total = total.toFixed(2);
+            $('#freteTotal1').text('0,00');
+            $('#total1').text(total);
+        }
+    }
+});
 
-// $('#adicionar11').on('click', function() {
-//     numero11 = ++numero11;
-//     valorProduto1 = 115.9 * numero11;
-//     valorProduto1 = valorProduto1.toFixed(2);
-//     subtotal = valorProduto1 + valorProduto2 + valorProduto3;
-//     subtotal = Number(subtotal).toFixed(2);
+$('#remover21').on('click', function() {
+    if (numero21 <= 0) {
+        numero21 = 0;
+        numeroProduto21.text(numero21);
 
-//     $('#subtotalTotal1').text(subtotal.replace('.', ','));
-//     subtotalProduto11.text(valorProduto1.replace('.', ','));
-//     numeroProduto11.text(numero11);
-// });
-
-// $('#remover11').on('click', function() {
-//     if (numero11 <= 0) {
-//         numero11 = 0;
-//         numeroProduto11.text(numero11);
-
-//     }else{
-//         numero11 = --numero11;
-//         valorProduto1 = 115.9 * numero11;
-//         valorProduto1 = valorProduto1.toFixed(2);
-//         subtotal = valorProduto1 + valorProduto2 + valorProduto3;
-//         subtotal = Number(subtotal).toFixed(2);
+    }else{
+        numero21 = --numero21;
+        valorProduto2 = 50.49 * Number(numero21);
+        valorProduto2 = valorProduto2.toFixed(2);
+        subtotal = Number(valorProduto1) + Number(valorProduto2) + Number(valorProduto3);
+        subtotal = Number(subtotal).toFixed(2);
     
-//         $('#subtotalTotal1').text(subtotal.toString().replace('.', ','));
-//         subtotalProduto11.text(valorProduto1.toString().replace('.', ','));
-//         numeroProduto11.text(numero11);
+        $('#subtotalTotal1').text(subtotal);
+        subtotalProduto21.text(valorProduto2);
+        numeroProduto21.text(numero21);
+        
+        if (document.querySelector('#sedex1').checked) {
+            total = Number(subtotal) + 15;
+            total = total.toFixed(2);
+            $('#freteTotal1').text('15,00');
+            $('#total1').text(total);
+        } else {
+            total = Number(subtotal);
+            total = total.toFixed(2);
+            $('#freteTotal1').text('0,00');
+            $('#total1').text(total);
+        }
+    }
+});
+
+$('#remover31').on('click', function() {
+    if (numero31 <= 0) {
+        numero31 = 0;
+        numeroProduto31.text(numero31);
+
+    }else{
+        numero31 = --numero31;
+        valorProduto3 = 80 * Number(numero31);
+        valorProduto3 = valorProduto3.toFixed(2);
+        subtotal = Number(valorProduto1) + Number(valorProduto2) + Number(valorProduto3);
+        subtotal = Number(subtotal).toFixed(2);
     
-//     }
-// });
+        $('#subtotalTotal1').text(subtotal);
+        subtotalProduto31.text(valorProduto3);
+        numeroProduto31.text(numero31);
+        
+        if (document.querySelector('#sedex1').checked) {
+            total = Number(subtotal) + 15;
+            total = total.toFixed(2);
+            $('#freteTotal1').text('15,00');
+            $('#total1').text(total);
+        } else {
+            total = Number(subtotal);
+            total = total.toFixed(2);
+            $('#freteTotal1').text('0,00');
+            $('#total1').text(total);
+        }
+    }
+});
 
+$('#remover12').on('click', function() {
+    if (numero12 <= 0) {
+        numero12 = 0;
+        numeroProduto12.text(numero12);
 
-// CALCULANDO FRETE, SUBTOTAL E TOTAL
-var sedex1 = $('#sedex1').val();
-var sedex2 = $('#sedex2').val();
+    }else{
+        numero12 = --numero12;
+        valorProduto1 = 115.9 * Number(numero12);
+        valorProduto1 = valorProduto1.toFixed(2);
+        subtotal = Number(valorProduto1) + Number(valorProduto2) + Number(valorProduto3);
+        subtotal = Number(subtotal).toFixed(2);
+    
+        $('#subtotalTotal2').text(subtotal);
+        subtotalProduto12.text(valorProduto1);
+        numeroProduto12.text(numero12);
+        
+        if (document.querySelector('#sedex2').checked) {
+            total = Number(subtotal) + 15;
+            total = total.toFixed(2);
+            $('#freteTotal2').text('15,00');
+            $('#total2').text(total);
+        } else {
+            total = Number(subtotal);
+            total = total.toFixed(2);
+            $('#freteTotal2').text('0,00');
+            $('#total2').text(total);
+        }
+    }
+});
 
+$('#remover22').on('click', function() {
+    if (numero22 <= 0) {
+        numero22 = 0;
+        numeroProduto22.text(numero22);
+
+    }else{
+        numero22 = --numero22;
+        valorProduto2 = 50.49 * Number(numero22);
+        valorProduto2 = valorProduto2.toFixed(2);
+        subtotal = Number(valorProduto1) + Number(valorProduto2) + Number(valorProduto3);
+        subtotal = Number(subtotal).toFixed(2);
+    
+        $('#subtotalTotal2').text(subtotal);
+        subtotalProduto22.text(valorProduto2);
+        numeroProduto22.text(numero22);
+        
+        if (document.querySelector('#sedex2').checked) {
+            total = Number(subtotal) + 15;
+            total = total.toFixed(2);
+            $('#freteTotal2').text('15,00');
+            $('#total2').text(total);
+        } else {
+            total = Number(subtotal);
+            total = total.toFixed(2);
+            $('#freteTotal2').text('0,00');
+            $('#total2').text(total);
+        }
+    }
+});
+
+$('#remover32').on('click', function() {
+    if (numero32 <= 0) {
+        numero32 = 0;
+        numeroProduto22.text(numero32);
+
+    }else{
+        numero32 = --numero32;
+        valorProduto3 = 50.49 * Number(numero32);
+        valorProduto3 = valorProduto3.toFixed(2);
+        subtotal = Number(valorProduto1) + Number(valorProduto2) + Number(valorProduto3);
+        subtotal = Number(subtotal).toFixed(2);
+    
+        $('#subtotalTotal2').text(subtotal);
+        subtotalProduto32.text(valorProduto3);
+        numeroProduto32.text(numero32);
+        
+        if (document.querySelector('#sedex2').checked) {
+            total = Number(subtotal) + 15;
+            total = total.toFixed(2);
+            $('#freteTotal2').text('15,00');
+            $('#total2').text(total);
+        } else {
+            total = Number(subtotal);
+            total = total.toFixed(2);
+            $('#freteTotal2').text('0,00');
+            $('#total2').text(total);
+        }
+    }
+});
